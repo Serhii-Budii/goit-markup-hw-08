@@ -1,0 +1,33 @@
+.box {
+padding-bottom: 94px;  
+}
+.box__title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+color: #212121;
+margin-bottom: 50px;
+}
+.box__list {
+display: flex;
+gap: 30px;
+}
+.box__item {
+position: relative;
+}
+.box__text {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+background-color: rgba(47, 48, 58, 0.8) ;
+color: #FFFFFF;
+height: 70px;
+width: 370px;
+position: absolute;
+padding: 27px;
+bottom: 0px;
+}
