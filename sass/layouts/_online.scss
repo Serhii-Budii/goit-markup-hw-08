@@ -24,7 +24,7 @@ align-items: center;
   }
 }
 .online-input{
-  width: 450px;
+  width: 100%;
   @include desktop {
    width: 358px; 
   }
@@ -56,6 +56,8 @@ flex-wrap: wrap;
 gap: 20px;
 align-items: center;
 justify-content: center;
+flex-direction: column;
+width: 100%;
 @include desktop {
   gap: 12px;
 }

@@ -1,16 +1,16 @@
 .header {
 width: 100%;
 background: var(--third-title-color);
-padding-top: 16px;
-padding-bottom: 16px;
+padding-top: 10px;
+padding-bottom: 10px;
 border-bottom: 1px solid rgba(236, 236, 236, 1);
 @include tablet {
 padding-top: 21px;
 padding-bottom: 21px;
 }
 @include desktop {
-padding-top: 32px;
-padding-bottom: 32px;
+padding-top: 25px;
+padding-bottom: 25px;
 }
 }
 .header__container {
@@ -146,8 +146,7 @@ height: 100%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-overflow: auto;
-  }
+}
 }
 .menu-close {
 width: 40px;

@@ -3,6 +3,7 @@
     display: none;
     @include desktop {
         display: block;
+        padding-top: 0;
     }
 }
 .box__title {
