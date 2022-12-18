@@ -1,23 +1,30 @@
-.clients {
-padding-top: 94px;
-padding-bottom: 94px;
-}
-.clients__title{
+.clients__title {
 font-weight: 700;
-font-size: 36px;
-line-height: 1.17;
+font-size: 28px;
+line-height: 1.18;
 text-align: center;
 color: #212121;
-margin-bottom: 50px;
+margin-bottom: 30px;
+@include desktop {
+   font-size: 36px;
+   line-height: 1.17;
+   margin-bottom: 50px;
+}
 }
 .clients__list {
 display: flex;
-justify-content: center;
+flex-wrap: wrap;
 gap: 30px;
 }
 .clients__item {
-width: 170px;
 height: 92px;
+width: calc((100% - 30px) / 2);
+@include tablet {
+   width: calc((100% - 60px) / 3);
+}
+@include desktop {
+   width: calc((100% - 150px) / 6);
+}
 }
 .clients__link {
 width: 100%;
@@ -29,10 +36,16 @@ justify-content: center;
 fill: var(--second-btn-color);
 border: 1px solid var(--second-btn-color);
 border-radius: 4px;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:focus {
+fill: var(--accent-colors);
+border: 1px solid var(--accent-colors);}
+@include desktop {
 &:hover,
 &:focus {
 fill: var(--accent-colors);
 border: 1px solid var(--accent-colors);
+}
 }
 }

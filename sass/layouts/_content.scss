@@ -1,21 +1,24 @@
-.content {
-padding-top: 94px;
-padding-bottom: 94px;
-}
+
 .content__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .content__title {
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
+text-align:center;
+@include tablet {
+  text-align: left;
+}
 text-transform: uppercase;
 color: #212121;
 margin-bottom: 10px;
 }
 .content__item{
- width: 270px; 
+ width: 100%;
+ max-width: 480px; 
  height: 248px;
  &::before{
   display: block;
@@ -26,6 +29,12 @@ margin-bottom: 10px;
   background-position: center;
   margin-bottom: 30px;
   height: 120px;
+}
+@include tablet {
+   width: calc((100% - 30px) / 2);
+}
+@include desktop {
+   width: calc((100% - 90px) / 4);
 }
 }
 .content__text{

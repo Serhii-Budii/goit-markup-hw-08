@@ -1,5 +1,9 @@
-.box {
-padding-bottom: 94px;  
+
+.box{
+    display: none;
+    @include desktop {
+        display: block;
+    }
 }
 .box__title {
 font-weight: 700;
@@ -11,6 +15,7 @@ margin-bottom: 50px;
 }
 .box__list {
 display: flex;
+flex-wrap: wrap;
 gap: 30px;
 }
 .box__item {
@@ -26,7 +31,7 @@ text-transform: uppercase;
 background-color: rgba(47, 48, 58, 0.8) ;
 color: #FFFFFF;
 height: 70px;
-width: 370px;
+width: 100%;
 position: absolute;
 padding: 27px;
 bottom: 0px;

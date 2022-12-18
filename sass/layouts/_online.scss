@@ -1,5 +1,12 @@
 .online-wrap{
-  margin-left: 93px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  @include desktop {
+  display: block;
+   margin-left: 93px; 
+  }
 }
 .online-title{
 font-weight: 700;
@@ -9,9 +16,18 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+@include desktop {
+    display: block;
+  }
 }
 .online-input{
-  width: 358px;
+  width: 450px;
+  @include desktop {
+   width: 358px; 
+  }
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -36,7 +52,13 @@ color: var(--third-btn-color);
 }
 .online-form{
 display: flex;
-gap: 12px;
+flex-wrap: wrap;
+gap: 20px;
+align-items: center;
+justify-content: center;
+@include desktop {
+  gap: 12px;
+}
 }
 .send-icon{
 fill: var(--third-btn-color);

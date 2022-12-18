@@ -1,7 +1,7 @@
 .footer{
 background: #2F303A;
 max-width: 1600px;
-margin: 0 auto;
+margin:0 auto;
 padding-top: 60px;
 padding-bottom: 60px;
 &>.container{
@@ -10,14 +10,31 @@ align-items:baseline;
 justify-content: center;
 }
 }
-
+.footer-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  @include desktop {
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+}
 .footer__logo {
 font-family: 'Raleway';
 font-weight: 700;
+font-size: 24px;
+line-height: 1.4;
+display: flex;
+justify-content: center;
+@include desktop {
 font-size: 26px;
-line-height: 1.19;
-color: var(--third-btn-color);
+line-height: 1.19;  
 display: inline-block;
+}
+color: var(--third-btn-color);
 margin-bottom: 20px;
 }
 .foot__logo{
@@ -33,6 +50,7 @@ color: var(--third-title-color);
 }
 .footer__list{
   display: inline;
+  margin-bottom: 8px;
 }
 .footer__mail-li:not(:last-child) {
   margin-bottom: 9px;
@@ -43,4 +61,9 @@ font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 color: rgba(255, 255, 255, 0.6);
+display: flex;
+justify-content: center;
+@include desktop {
+  display: inline;
+}
 }

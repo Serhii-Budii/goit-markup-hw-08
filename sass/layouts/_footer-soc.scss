@@ -1,5 +1,8 @@
 .footer-soc {
-margin-left: auto;
+margin-left: 0 auto;
+@include desktop {
+    margin-left: auto;
+}
 }
 .footer-soc-title {
 font-weight: 700;
@@ -9,6 +12,11 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--third-btn-color);
 margin-bottom: 20px;
+justify-content: center;
+display: flex;
+@include desktop {
+   display: block;
+}
 }
 .footer-soc-list {
 display: flex;
