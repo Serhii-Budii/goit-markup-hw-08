@@ -114,8 +114,8 @@ body {
 .header {
   width: 100%;
   background: var(--third-title-color);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgb(236, 236, 236);
 }
 @media screen and (min-width: 768px) {
@@ -126,8 +126,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -196,7 +196,7 @@ body {
   color: #212121;
 }
 @media screen and (min-width: 1200px) {
-  .menu__link,
+.menu__link,
 .connect__mail,
 .connect__tel {
     font-size: 14px;
@@ -385,7 +385,7 @@ body {
   background-position: center;
   background-size: cover;
   padding-top: 118px;
-  padding-bottom: 198px;
+  padding-bottom: 118px;
   max-height: 400px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/head-bg-mob.jpg);
 }
@@ -511,8 +511,6 @@ body {
 
 .content__item {
   width: 100%;
-  max-width: 480px;
-  height: 248px;
 }
 .content__item::before {
   display: block;
@@ -603,14 +601,13 @@ body {
 
 .team {
   background-color: #f5f4fa;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
 .team__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.18px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
@@ -768,7 +765,6 @@ body {
 
 .footer {
   background: #2F303A;
-  max-width: 1600px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -937,7 +933,7 @@ body {
 }
 
 .online-input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -996,7 +992,7 @@ body {
 
 .modal {
   max-width: 450px;
-  width: 100%;
+  width: calc(100%-30px);
   min-height: 609px;
   background-color: #ffffff;
   border-radius: 5px;
