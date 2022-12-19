@@ -81,7 +81,7 @@ body {
 }
 
 .site-body {
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 
 .link:hover,
