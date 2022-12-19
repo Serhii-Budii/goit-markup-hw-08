@@ -80,6 +80,10 @@ body {
   overflow: hidden;
 }
 
+.site-body {
+  overflow-x: hidden;
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-colors);
