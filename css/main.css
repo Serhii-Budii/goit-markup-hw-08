@@ -107,6 +107,10 @@ body {
   }
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .header {
   width: 100%;
   background: var(--third-title-color);
