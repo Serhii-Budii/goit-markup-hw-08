@@ -120,8 +120,8 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -229,7 +229,7 @@ body {
   border-radius: 2px;
   display: block;
   position: absolute;
-  top: 92px;
+  top: 78px;
 }
 
 .menu__item .current.portfolio::after {
@@ -240,7 +240,7 @@ body {
   border-radius: 2px;
   display: block;
   position: absolute;
-  top: 92px;
+  top: 78px;
 }
 
 .navigation__logo,
@@ -357,6 +357,7 @@ body {
 .mob-soc-list {
   display: flex;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .mob-soc-item:not(:last-child)::after {
@@ -561,6 +562,7 @@ body {
 @media screen and (min-width: 1200px) {
   .box {
     display: block;
+    padding-top: 0;
   }
 }
 
@@ -772,8 +774,12 @@ body {
 .footer > .container {
   display: flex;
   align-items: baseline;
-  justify-content: center;
+  justify-content: center;}
+@media screen and (min-width: 768px) {
+ .footer > .container{ 
+  justify-content: space-between;} 
 }
+
 
 .footer-container {
   display: flex;
@@ -969,6 +975,8 @@ body {
   gap: 20px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .online-form {
@@ -1005,7 +1013,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
+    width: calc(100%-30px);
     min-height: 581px;
   }
 }
